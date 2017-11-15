@@ -1,0 +1,9 @@
+The ECG signals used in the development and testing of the biomedical signal processing algorithms are mainly from three sources: 1) Biomedical databases (e.g., MIT-BIH Arrhythmia Database) or other pre-recorded ECG data; 2) ECG simulator; 3) Real-time ECG data acquisition.
+In this example, the following pre-recorded and simulated ECG signals are used. The signals all have sampling frequencies of 360 Hz.
+First of all we took an arrhythmic data and plotted its ECG waveform.
+Next we calculated its BPM with the help of a Matlab code.
+Then the HRV (Heart Rate Variability) was calculated.
+Now, where ever the heart beat is lower than 60 bpm, the pacemaker will send an impulse to restore the heart beat to a normal pacing, i.e. 60-100bpm.
+The impulse will be of magnitude -50mv for 2ms, and it has a refractory period of 200-300ms.
+The connected Arduino will flash the LED where ever there is an impulse shoot.
+We have also portrayed how the Heart Rate Variability (HRV) would be after the model has completed its simulation.
