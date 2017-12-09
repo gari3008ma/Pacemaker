@@ -1,2 +1,2 @@
 # Pacemaker
-Heart Disease detection
+Provides impulse as per heart condition
